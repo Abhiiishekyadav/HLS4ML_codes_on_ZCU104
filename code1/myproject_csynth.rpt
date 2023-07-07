@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myproject'
 ================================================================
-* Date:           Sun Jan 20 21:29:47 2019
+* Date:           Sat Jul  8 01:20:47 2023
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        myproject_prj
@@ -20,42 +20,42 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 5.00 ns | 4.359 ns |   0.62 ns  |
+    |ap_clk  | 5.00 ns | 4.375 ns |   0.62 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+----------+--------+--------+----------+
-    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline |
-    |   min   |   max   |    min   |    max   |   min  |   max  |   Type   |
-    +---------+---------+----------+----------+--------+--------+----------+
-    |   113729|   114129| 0.569 ms | 0.571 ms |  113569|  114115| dataflow |
-    +---------+---------+----------+----------+--------+--------+----------+
+    +----------+----------+-----------+-----------+--------+----------+----------+
+    |   Latency (cycles)  |   Latency (absolute)  |      Interval     | Pipeline |
+    |    min   |    max   |    min    |    max    |   min  |    max   |   Type   |
+    +----------+----------+-----------+-----------+--------+----------+----------+
+    |  19011205|  19015061| 95.056 ms | 95.075 ms |  113569|  19008002| dataflow |
+    +----------+----------+-----------+-----------+--------+----------+----------+
 
     + Detail: 
         * Instance: 
-        +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+---------+-----------+-----------+--------+--------+----------+
-        |                                                                        |                                                                       |  Latency (cycles) |   Latency (absolute)  |     Interval    | Pipeline |
-        |                                Instance                                |                                 Module                                |   min   |   max   |    min    |    max    |   min  |   max  |   Type   |
-        +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+---------+-----------+-----------+--------+--------+----------+
-        |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_2u_config12_U0       |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_2u_config12_s       |      113|      113|  0.565 us |  0.565 us |     113|     113|   none   |
-        |conv_2d_cl_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_16u_config8_U0  |conv_2d_cl_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_16u_config8_s  |   113568|   114114|  0.568 ms |  0.571 ms |  113568|  114114|   none   |
-        |conv_2d_cl_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_18u_config5_U0  |conv_2d_cl_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_18u_config5_s  |     2296|     2296| 11.480 us | 11.480 us |    2296|    2296|   none   |
-        |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_22u_config2_U0   |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_22u_config2_s   |    38403|    38403|  0.192 ms |  0.192 ms |   38403|   38403|   none   |
-        |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_22u_config4_U0             |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_22u_config4_s             |     9167|     9167| 45.835 us | 45.835 us |    9167|    9167|   none   |
-        |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_18u_config7_U0             |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_18u_config7_s             |     2187|     2187| 10.935 us | 10.935 us |    2187|    2187|   none   |
-        |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config10_U0            |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config10_s            |      447|      447|  2.235 us |  2.235 us |     447|     447|   none   |
-        |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config19_U0         |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config19_s         |       10|       10| 50.000 ns | 50.000 ns |      10|      10|   none   |
-        |dense_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_10u_config18_U0       |dense_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_10u_config18_s       |        2|        2| 10.000 ns | 10.000 ns |       2|       2|   none   |
-        |dense_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_6u_config16_U0        |dense_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_6u_config16_s        |        3|        3| 15.000 ns | 15.000 ns |       3|       3|   none   |
-        |relu_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_22u_relu_config3_U0   |relu_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_22u_relu_config3_s   |     9167|     9167| 45.835 us | 45.835 us |    9167|    9167|   none   |
-        |relu_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_18u_relu_config6_U0   |relu_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_18u_relu_config6_s   |     2187|     2187| 10.935 us | 10.935 us |    2187|    2187|   none   |
-        |relu_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_relu_config9_U0   |relu_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_relu_config9_s   |      447|      447|  2.235 us |  2.235 us |     447|     447|   none   |
-        |dense_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_8u_config14_U0        |dense_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_8u_config14_s        |        2|        2| 10.000 ns | 10.000 ns |       2|       2|   none   |
-        |relu_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_relu_config15_U0    |relu_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_relu_config15_s    |        1|        1|  5.000 ns |  5.000 ns |       1|       1| function |
-        |relu_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_6u_relu_config17_U0    |relu_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_6u_relu_config17_s    |        1|        1|  5.000 ns |  5.000 ns |       1|       1| function |
-        |relu_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_2u_relu_config13_U0    |relu_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_2u_relu_config13_s    |        1|        1|  5.000 ns |  5.000 ns |       1|       1| function |
-        +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+---------+-----------+-----------+--------+--------+----------+
+        +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+----------+-----------+-----------+--------+----------+----------+
+        |                                                                        |                                                                       |  Latency (cycles)  |   Latency (absolute)  |      Interval     | Pipeline |
+        |                                Instance                                |                                 Module                                |   min   |    max   |    min    |    max    |   min  |    max   |   Type   |
+        +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+----------+-----------+-----------+--------+----------+----------+
+        |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_2u_config12_U0       |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_2u_config12_s       |     1841|      1842|  9.205 us |  9.210 us |    1841|      1842|   none   |
+        |conv_2d_cl_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_18u_config5_U0  |conv_2d_cl_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_18u_config5_s  |     4583|   3319660| 22.915 us | 16.598 ms |    4583|   3319660|   none   |
+        |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_22u_config2_U0   |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_22u_config2_s   |    76801|  19008001|  0.384 ms | 95.040 ms |   76801|  19008001|   none   |
+        |conv_2d_cl_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_16u_config8_U0  |conv_2d_cl_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_16u_config8_s  |   113568|   1529892|  0.568 ms |  7.649 ms |  113568|   1529892|   none   |
+        |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_22u_config4_U0             |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_22u_config4_s             |     9167|      9167| 45.835 us | 45.835 us |    9167|      9167|   none   |
+        |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_18u_config7_U0             |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_18u_config7_s             |     2187|      2187| 10.935 us | 10.935 us |    2187|      2187|   none   |
+        |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config19_U0         |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config19_s         |       29|        29|  0.145 us |  0.145 us |      29|        29|   none   |
+        |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config10_U0            |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config10_s            |      447|       447|  2.235 us |  2.235 us |     447|       447|   none   |
+        |dense_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_10u_config18_U0       |dense_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_10u_config18_s       |       60|        60|  0.300 us |  0.300 us |      60|        60|   none   |
+        |dense_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_6u_config16_U0        |dense_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_6u_config16_s        |       50|        51|  0.250 us |  0.255 us |      50|        51|   none   |
+        |relu_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_22u_relu_config3_U0   |relu_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_22u_relu_config3_s   |     9167|      9167| 45.835 us | 45.835 us |    9167|      9167|   none   |
+        |relu_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_18u_relu_config6_U0   |relu_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_18u_relu_config6_s   |     2187|      2187| 10.935 us | 10.935 us |    2187|      2187|   none   |
+        |relu_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_relu_config9_U0   |relu_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_relu_config9_s   |      447|       447|  2.235 us |  2.235 us |     447|       447|   none   |
+        |dense_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_8u_config14_U0        |dense_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_8u_config14_s        |       18|        19| 90.000 ns | 95.000 ns |      18|        19|   none   |
+        |relu_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_relu_config15_U0    |relu_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_relu_config15_s    |        1|         1|  5.000 ns |  5.000 ns |       1|         1| function |
+        |relu_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_6u_relu_config17_U0    |relu_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_6u_relu_config17_s    |        1|         1|  5.000 ns |  5.000 ns |       1|         1| function |
+        |relu_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_2u_relu_config13_U0    |relu_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_2u_relu_config13_s    |        1|         1|  5.000 ns |  5.000 ns |       1|         1| function |
+        +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+----------+-----------+-----------+--------+----------+----------+
 
         * Loop: 
         N/A
@@ -71,44 +71,44 @@
 +-----------------+---------+-------+--------+--------+-----+
 |DSP              |        -|      -|       -|       -|    -|
 |Expression       |        -|      -|       0|       2|    -|
-|FIFO             |      782|      -|   13730|   33776|    -|
-|Instance         |        3|   7313|  110255|  217479|    -|
+|FIFO             |      210|      -|   10710|   17220|    -|
+|Instance         |        9|      9|  147545|  144167|    -|
 |Memory           |        -|      -|       -|       -|    -|
 |Multiplexer      |        -|      -|       -|       -|    -|
 |Register         |        -|      -|       -|       -|    -|
 +-----------------+---------+-------+--------+--------+-----+
-|Total            |      785|   7313|  123985|  251257|    0|
+|Total            |      219|      9|  158255|  161389|    0|
 +-----------------+---------+-------+--------+--------+-----+
 |Available        |      624|   1728|  460800|  230400|   96|
 +-----------------+---------+-------+--------+--------+-----+
-|Utilization (%)  |      125|    423|      26|     109|    0|
+|Utilization (%)  |       35|   ~0  |      34|      70|    0|
 +-----------------+---------+-------+--------+--------+-----+
 
 + Detail: 
     * Instance: 
-    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+-------+-------+-------+-----+
-    |                                Instance                                |                                 Module                                | BRAM_18K| DSP48E|   FF  |  LUT  | URAM|
-    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+-------+-------+-------+-----+
-    |conv_2d_cl_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_16u_config8_U0  |conv_2d_cl_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_16u_config8_s  |        0|   2288|  28806|  57591|    0|
-    |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_22u_config2_U0   |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_22u_config2_s   |        0|    500|   2910|  14929|    0|
-    |conv_2d_cl_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_18u_config5_U0  |conv_2d_cl_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_18u_config5_s  |        0|   1456|  11068|  42067|    0|
-    |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_2u_config12_U0       |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_2u_config12_s       |        0|   2937|  54648|  77364|    0|
-    |dense_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_8u_config14_U0        |dense_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_8u_config14_s        |        0|     16|    165|    391|    0|
-    |dense_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_10u_config18_U0       |dense_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_10u_config18_s       |        0|     59|    261|   1613|    0|
-    |dense_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_6u_config16_U0        |dense_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_6u_config16_s        |        0|     47|    641|   1101|    0|
-    |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config10_U0            |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config10_s            |        0|      0|   2804|   3924|    0|
-    |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_18u_config7_U0             |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_18u_config7_s             |        0|      0|   3100|   4931|    0|
-    |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_22u_config4_U0             |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_22u_config4_s             |        0|      0|   3750|   6617|    0|
-    |relu_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_relu_config9_U0   |relu_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_relu_config9_s   |        0|      0|    275|    863|    0|
-    |relu_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_18u_relu_config6_U0   |relu_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_18u_relu_config6_s   |        0|      0|    310|    960|    0|
-    |relu_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_22u_relu_config3_U0   |relu_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_22u_relu_config3_s   |        0|      0|    376|   1150|    0|
-    |relu_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_2u_relu_config13_U0    |relu_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_2u_relu_config13_s    |        0|      0|     36|    122|    0|
-    |relu_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_6u_relu_config17_U0    |relu_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_6u_relu_config17_s    |        0|      0|    100|    310|    0|
-    |relu_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_relu_config15_U0    |relu_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_relu_config15_s    |        0|      0|    132|    404|    0|
-    |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config19_U0         |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config19_s         |        3|     10|    873|   3142|    0|
-    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+-------+-------+-------+-----+
-    |Total                                                                   |                                                                       |        3|   7313| 110255| 217479|    0|
-    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+-------+-------+-------+-----+
+    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+-------+--------+-------+-----+
+    |                                Instance                                |                                 Module                                | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
+    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+-------+--------+-------+-----+
+    |conv_2d_cl_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_16u_config8_U0  |conv_2d_cl_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_16u_config8_s  |        4|      1|    7373|   6201|    0|
+    |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_22u_config2_U0   |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_22u_config2_s   |        0|      1|    4803|  15981|    0|
+    |conv_2d_cl_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_18u_config5_U0  |conv_2d_cl_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_18u_config5_s  |        0|      1|   12368|  34555|    0|
+    |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_2u_config12_U0       |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_2u_config12_s       |        3|      2|  110760|  62724|    0|
+    |dense_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_8u_config14_U0        |dense_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_8u_config14_s        |        0|      1|     463|    964|    0|
+    |dense_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_10u_config18_U0       |dense_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_10u_config18_s       |        0|      1|     789|   1883|    0|
+    |dense_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_6u_config16_U0        |dense_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_6u_config16_s        |        0|      1|     796|   1155|    0|
+    |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config10_U0            |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config10_s            |        0|      0|    2230|   3574|    0|
+    |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_18u_config7_U0             |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_18u_config7_s             |        0|      0|    2489|   4535|    0|
+    |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_22u_config4_U0             |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_22u_config4_s             |        0|      0|    3003|   6133|    0|
+    |relu_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_relu_config9_U0   |relu_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_relu_config9_s   |        0|      0|     275|    863|    0|
+    |relu_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_18u_relu_config6_U0   |relu_array_ap_fixed_18u_array_ap_fixed_16_6_5_3_0_18u_relu_config6_s   |        0|      0|     310|    960|    0|
+    |relu_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_22u_relu_config3_U0   |relu_array_ap_fixed_22u_array_ap_fixed_16_6_5_3_0_22u_relu_config3_s   |        0|      0|     376|   1150|    0|
+    |relu_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_2u_relu_config13_U0    |relu_array_ap_fixed_2u_array_ap_fixed_16_6_5_3_0_2u_relu_config13_s    |        0|      0|      36|    122|    0|
+    |relu_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_6u_relu_config17_U0    |relu_array_ap_fixed_6u_array_ap_fixed_16_6_5_3_0_6u_relu_config17_s    |        0|      0|     100|    310|    0|
+    |relu_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_relu_config15_U0    |relu_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_relu_config15_s    |        0|      0|     132|    404|    0|
+    |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config19_U0         |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config19_s         |        2|      1|    1242|   2653|    0|
+    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+-------+--------+-------+-----+
+    |Total                                                                   |                                                                       |        9|      9|  147545| 144167|    0|
+    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+-------+--------+-------+-----+
 
     * DSP48E: 
     N/A
@@ -120,218 +120,218 @@
     +---------------------------+---------+-----+----+-----+------+-----+---------+
     |            Name           | BRAM_18K|  FF | LUT| URAM| Depth| Bits| Size:D*B|
     +---------------------------+---------+-----+----+-----+------+-----+---------+
-    |layer10_out_V_data_0_V_U   |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_10_V_U  |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_11_V_U  |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_12_V_U  |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_13_V_U  |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_14_V_U  |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_15_V_U  |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_1_V_U   |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_2_V_U   |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_3_V_U   |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_4_V_U   |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_5_V_U   |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_6_V_U   |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_7_V_U   |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_8_V_U   |        1|   36|   0|    -|   108|   16|     1728|
-    |layer10_out_V_data_9_V_U   |        1|   36|   0|    -|   108|   16|     1728|
-    |layer12_out_V_data_0_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer12_out_V_data_1_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer13_out_V_data_0_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer13_out_V_data_1_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer14_out_V_data_0_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer14_out_V_data_1_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer14_out_V_data_2_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer14_out_V_data_3_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer14_out_V_data_4_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer14_out_V_data_5_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer14_out_V_data_6_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer14_out_V_data_7_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer15_out_V_data_0_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer15_out_V_data_1_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer15_out_V_data_2_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer15_out_V_data_3_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer15_out_V_data_4_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer15_out_V_data_5_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer15_out_V_data_6_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer15_out_V_data_7_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer16_out_V_data_0_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer16_out_V_data_1_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer16_out_V_data_2_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer16_out_V_data_3_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer16_out_V_data_4_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer16_out_V_data_5_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer17_out_V_data_0_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer17_out_V_data_1_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer17_out_V_data_2_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer17_out_V_data_3_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer17_out_V_data_4_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer17_out_V_data_5_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer18_out_V_data_0_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer18_out_V_data_1_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer18_out_V_data_2_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer18_out_V_data_3_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer18_out_V_data_4_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer18_out_V_data_5_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer18_out_V_data_6_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer18_out_V_data_7_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer18_out_V_data_8_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer18_out_V_data_9_V_U   |        0|    5|   0|    -|     1|   16|       16|
-    |layer2_out_V_data_0_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_10_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_11_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_12_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_13_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_14_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_15_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_16_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_17_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_18_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_19_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_1_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_20_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_21_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_2_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_3_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_4_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_5_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_6_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_7_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_8_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer2_out_V_data_9_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_0_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_10_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_11_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_12_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_13_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_14_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_15_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_16_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_17_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_18_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_19_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_1_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_20_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_21_V_U   |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_2_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_3_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_4_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_5_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_6_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_7_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_8_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer3_out_V_data_9_V_U    |       11|  157|   0|    -|  9164|   16|   146624|
-    |layer4_out_V_data_0_V_U    |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_10_V_U   |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_11_V_U   |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_12_V_U   |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_13_V_U   |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_14_V_U   |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_15_V_U   |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_16_V_U   |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_17_V_U   |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_18_V_U   |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_19_V_U   |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_1_V_U    |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_20_V_U   |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_21_V_U   |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_2_V_U    |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_3_V_U    |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_4_V_U    |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_5_V_U    |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_6_V_U    |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_7_V_U    |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_8_V_U    |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer4_out_V_data_9_V_U    |        4|   67|   0|    -|  2291|   16|    36656|
-    |layer5_out_V_data_0_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_10_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_11_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_12_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_13_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_14_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_15_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_16_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_17_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_1_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_2_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_3_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_4_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_5_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_6_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_7_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_8_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer5_out_V_data_9_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_0_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_10_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_11_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_12_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_13_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_14_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_15_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_16_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_17_V_U   |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_1_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_2_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_3_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_4_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_5_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_6_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_7_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_8_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer6_out_V_data_9_V_U    |        4|   66|   0|    -|  2184|   16|    34944|
-    |layer7_out_V_data_0_V_U    |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_10_V_U   |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_11_V_U   |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_12_V_U   |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_13_V_U   |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_14_V_U   |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_15_V_U   |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_16_V_U   |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_17_V_U   |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_1_V_U    |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_2_V_U    |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_3_V_U    |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_4_V_U    |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_5_V_U    |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_6_V_U    |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_7_V_U    |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_8_V_U    |        1|   45|   0|    -|   546|   16|     8736|
-    |layer7_out_V_data_9_V_U    |        1|   45|   0|    -|   546|   16|     8736|
-    |layer8_out_V_data_0_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_10_V_U   |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_11_V_U   |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_12_V_U   |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_13_V_U   |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_14_V_U   |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_15_V_U   |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_1_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_2_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_3_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_4_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_5_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_6_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_7_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_8_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer8_out_V_data_9_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_0_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_10_V_U   |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_11_V_U   |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_12_V_U   |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_13_V_U   |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_14_V_U   |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_15_V_U   |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_1_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_2_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_3_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_4_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_5_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_6_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_7_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_8_V_U    |        1|   43|   0|    -|   444|   16|     7104|
-    |layer9_out_V_data_9_V_U    |        1|   43|   0|    -|   444|   16|     7104|
+    |layer10_out_V_data_0_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_10_V_U  |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_11_V_U  |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_12_V_U  |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_13_V_U  |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_14_V_U  |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_15_V_U  |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_1_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_2_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_3_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_4_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_5_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_6_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_7_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_8_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer10_out_V_data_9_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer12_out_V_data_0_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer12_out_V_data_1_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer13_out_V_data_0_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer13_out_V_data_1_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer14_out_V_data_0_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer14_out_V_data_1_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer14_out_V_data_2_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer14_out_V_data_3_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer14_out_V_data_4_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer14_out_V_data_5_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer14_out_V_data_6_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer14_out_V_data_7_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer15_out_V_data_0_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer15_out_V_data_1_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer15_out_V_data_2_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer15_out_V_data_3_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer15_out_V_data_4_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer15_out_V_data_5_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer15_out_V_data_6_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer15_out_V_data_7_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer16_out_V_data_0_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer16_out_V_data_1_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer16_out_V_data_2_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer16_out_V_data_3_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer16_out_V_data_4_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer16_out_V_data_5_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer17_out_V_data_0_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer17_out_V_data_1_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer17_out_V_data_2_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer17_out_V_data_3_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer17_out_V_data_4_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer17_out_V_data_5_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer18_out_V_data_0_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer18_out_V_data_1_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer18_out_V_data_2_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer18_out_V_data_3_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer18_out_V_data_4_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer18_out_V_data_5_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer18_out_V_data_6_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer18_out_V_data_7_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer18_out_V_data_8_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer18_out_V_data_9_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_0_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_10_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_11_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_12_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_13_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_14_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_15_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_16_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_17_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_18_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_19_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_1_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_20_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_21_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_2_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_3_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_4_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_5_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_6_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_7_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_8_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer2_out_V_data_9_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_0_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_10_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_11_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_12_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_13_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_14_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_15_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_16_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_17_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_18_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_19_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_1_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_20_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_21_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_2_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_3_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_4_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_5_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_6_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_7_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_8_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer3_out_V_data_9_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_0_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_10_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_11_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_12_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_13_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_14_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_15_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_16_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_17_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_18_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_19_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_1_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_20_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_21_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_2_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_3_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_4_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_5_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_6_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_7_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_8_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer4_out_V_data_9_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_0_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_10_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_11_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_12_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_13_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_14_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_15_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_16_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_17_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_1_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_2_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_3_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_4_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_5_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_6_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_7_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_8_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer5_out_V_data_9_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_0_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_10_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_11_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_12_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_13_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_14_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_15_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_16_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_17_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_1_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_2_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_3_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_4_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_5_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_6_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_7_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_8_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer6_out_V_data_9_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_0_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_10_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_11_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_12_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_13_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_14_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_15_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_16_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_17_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_1_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_2_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_3_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_4_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_5_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_6_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_7_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_8_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer7_out_V_data_9_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_0_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_10_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_11_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_12_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_13_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_14_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_15_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_1_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_2_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_3_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_4_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_5_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_6_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_7_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_8_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer8_out_V_data_9_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_0_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_10_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_11_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_12_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_13_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_14_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_15_V_U   |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_1_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_2_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_3_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_4_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_5_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_6_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_7_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_8_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
+    |layer9_out_V_data_9_V_U    |        1|   51|   0|    -|  1000|   16|    16000|
     +---------------------------+---------+-----+----+-----+------+-----+---------+
-    |Total                      |      782|13730|   0|    0|558048| 3360|  8928768|
+    |Total                      |      210|10710|   0|    0|210000| 3360|  3360000|
     +---------------------------+---------+-----+----+-----+------+-----+---------+
 
     * Expression: 
