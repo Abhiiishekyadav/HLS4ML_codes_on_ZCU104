@@ -1,0 +1,279 @@
+
+
+================================================================
+== Vivado HLS Report for 'myproject'
+================================================================
+* Date:           Fri Jul  7 18:02:24 2023
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 4.375 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+--------+----------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline |
+    |   min   |   max   |    min   |    max   |  min |   max  |   Type   |
+    +---------+---------+----------+----------+------+--------+----------+
+    |   139310|   139311| 0.697 ms | 0.697 ms |  1570|  137202| dataflow |
+    +---------+---------+----------+----------+------+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+---------+----------+----------+------+--------+----------+
+        |                                                                        |                                                                       |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline |
+        |                                Instance                                |                                 Module                                |   min   |   max   |    min   |    max   |  min |   max  |   Type   |
+        +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+---------+----------+----------+------+--------+----------+
+        |conv_2d_cl_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_16u_config5_U0   |conv_2d_cl_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_16u_config5_s   |      433|   117793| 2.165 us | 0.589 ms |   433|  117793|   none   |
+        |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_10u_config9_U0       |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_10u_config9_s       |     1300|     1301| 6.500 us | 6.505 us |  1300|    1301|   none   |
+        |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_8u_config2_U0    |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_8u_config2_s    |     1569|   137201| 7.845 us | 0.686 ms |  1569|  137201|   none   |
+        |dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_config11_U0      |dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_config11_s      |       91|       91| 0.455 us | 0.455 us |    91|      91|   none   |
+        |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config7_U0             |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config7_s             |       67|       67| 0.335 us | 0.335 us |    67|      67|   none   |
+        |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config12_U0         |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config12_s         |       29|       29| 0.145 us | 0.145 us |    29|      29|   none   |
+        |pooling2d_cl_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_config4_U0  |pooling2d_cl_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_config4_s  |      579|      579| 2.895 us | 2.895 us |   579|     579|   none   |
+        |relu_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_relu_config6_U0   |relu_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_relu_config6_s   |       67|       67| 0.335 us | 0.335 us |    67|      67|   none   |
+        |relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config10_U0  |relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config10_s  |        1|        1| 5.000 ns | 5.000 ns |     1|       1| function |
+        |relu_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_relu_config3_U0     |relu_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_relu_config3_s     |      579|      579| 2.895 us | 2.895 us |   579|     579|   none   |
+        +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+---------+----------+----------+------+--------+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|       2|    -|
+|FIFO             |       56|      -|    2406|    4024|    -|
+|Instance         |        6|      8|   75399|  122738|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|       -|    -|
+|Register         |        -|      -|       -|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |       62|      8|   77805|  126764|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |      624|   1728|  460800|  230400|   96|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        9|   ~0  |      16|      55|    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+-------+-------+-------+-----+
+    |                                Instance                                |                                 Module                                | BRAM_18K| DSP48E|   FF  |  LUT  | URAM|
+    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+-------+-------+-------+-----+
+    |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_8u_config2_U0    |conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_8u_config2_s    |        0|      1|   4569|   6584|    0|
+    |conv_2d_cl_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_16u_config5_U0   |conv_2d_cl_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_16u_config5_s   |        0|      3|  50175|  92011|    0|
+    |dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_config11_U0      |dense_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_config11_s      |        0|      1|   1747|   3180|    0|
+    |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_10u_config9_U0       |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_10u_config9_s       |        4|      2|  12770|  11090|    0|
+    |pooling2d_cl_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_config4_U0  |pooling2d_cl_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_config4_s  |        0|      0|   1509|   1965|    0|
+    |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config7_U0             |pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config7_s             |        0|      0|   2802|   3409|    0|
+    |relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config10_U0  |relu_array_ap_fixed_10u_array_ap_fixed_16_6_5_3_0_10u_relu_config10_s  |        0|      0|    164|    498|    0|
+    |relu_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_relu_config6_U0   |relu_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_relu_config6_s   |        0|      0|    273|    860|    0|
+    |relu_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_relu_config3_U0     |relu_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_relu_config3_s     |        0|      0|    148|    488|    0|
+    |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config12_U0         |softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config12_s         |        2|      1|   1242|   2653|    0|
+    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+-------+-------+-------+-----+
+    |Total                                                                   |                                                                       |        6|      8|  75399| 122738|    0|
+    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+-------+-------+-------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +--------------------------+---------+----+----+-----+------+-----+---------+
+    |           Name           | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +--------------------------+---------+----+----+-----+------+-----+---------+
+    |layer10_out_V_data_0_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer10_out_V_data_1_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer10_out_V_data_2_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer10_out_V_data_3_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer10_out_V_data_4_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer10_out_V_data_5_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer10_out_V_data_6_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer10_out_V_data_7_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer10_out_V_data_8_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer10_out_V_data_9_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer11_out_V_data_0_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer11_out_V_data_1_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer11_out_V_data_2_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer11_out_V_data_3_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer11_out_V_data_4_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer11_out_V_data_5_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer11_out_V_data_6_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer11_out_V_data_7_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer11_out_V_data_8_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer11_out_V_data_9_V_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer2_out_V_data_0_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer2_out_V_data_1_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer2_out_V_data_2_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer2_out_V_data_3_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer2_out_V_data_4_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer2_out_V_data_5_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer2_out_V_data_6_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer2_out_V_data_7_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer3_out_V_data_0_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer3_out_V_data_1_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer3_out_V_data_2_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer3_out_V_data_3_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer3_out_V_data_4_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer3_out_V_data_5_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer3_out_V_data_6_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer3_out_V_data_7_V_U   |        1|  45|   0|    -|   576|   16|     9216|
+    |layer4_out_V_data_0_V_U   |        1|  38|   0|    -|   144|   16|     2304|
+    |layer4_out_V_data_1_V_U   |        1|  38|   0|    -|   144|   16|     2304|
+    |layer4_out_V_data_2_V_U   |        1|  38|   0|    -|   144|   16|     2304|
+    |layer4_out_V_data_3_V_U   |        1|  38|   0|    -|   144|   16|     2304|
+    |layer4_out_V_data_4_V_U   |        1|  38|   0|    -|   144|   16|     2304|
+    |layer4_out_V_data_5_V_U   |        1|  38|   0|    -|   144|   16|     2304|
+    |layer4_out_V_data_6_V_U   |        1|  38|   0|    -|   144|   16|     2304|
+    |layer4_out_V_data_7_V_U   |        1|  38|   0|    -|   144|   16|     2304|
+    |layer5_out_V_data_0_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_10_V_U  |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_11_V_U  |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_12_V_U  |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_13_V_U  |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_14_V_U  |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_15_V_U  |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_1_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_2_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_3_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_4_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_5_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_6_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_7_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_8_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer5_out_V_data_9_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_0_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_10_V_U  |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_11_V_U  |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_12_V_U  |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_13_V_U  |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_14_V_U  |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_15_V_U  |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_1_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_2_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_3_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_4_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_5_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_6_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_7_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_8_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer6_out_V_data_9_V_U   |        1|  35|   0|    -|    64|   16|     1024|
+    |layer7_out_V_data_0_V_U   |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_10_V_U  |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_11_V_U  |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_12_V_U  |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_13_V_U  |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_14_V_U  |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_15_V_U  |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_1_V_U   |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_2_V_U   |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_3_V_U   |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_4_V_U   |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_5_V_U   |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_6_V_U   |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_7_V_U   |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_8_V_U   |        0|   7|   0|    -|    16|   16|      256|
+    |layer7_out_V_data_9_V_U   |        0|   7|   0|    -|    16|   16|      256|
+    |layer9_out_V_data_0_V_U   |        0|   5|   0|    -|     1|   16|       16|
+    |layer9_out_V_data_1_V_U   |        0|   5|   0|    -|     1|   16|       16|
+    |layer9_out_V_data_2_V_U   |        0|   5|   0|    -|     1|   16|       16|
+    |layer9_out_V_data_3_V_U   |        0|   5|   0|    -|     1|   16|       16|
+    |layer9_out_V_data_4_V_U   |        0|   5|   0|    -|     1|   16|       16|
+    |layer9_out_V_data_5_V_U   |        0|   5|   0|    -|     1|   16|       16|
+    |layer9_out_V_data_6_V_U   |        0|   5|   0|    -|     1|   16|       16|
+    |layer9_out_V_data_7_V_U   |        0|   5|   0|    -|     1|   16|       16|
+    |layer9_out_V_data_8_V_U   |        0|   5|   0|    -|     1|   16|       16|
+    |layer9_out_V_data_9_V_U   |        0|   5|   0|    -|     1|   16|       16|
+    +--------------------------+---------+----+----+-----+------+-----+---------+
+    |Total                     |       56|2406|   0|    0| 12702| 1632|   203232|
+    +--------------------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------+----------+-------+---+----+------------+------------+
+    | Variable Name| Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |ap_idle       |    and   |      0|  0|   2|           1|           1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |Total         |          |      0|  0|   2|           1|           1|
+    +--------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------+-----+-----+------------+------------------------+--------------+
+|           RTL Ports           | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++-------------------------------+-----+-----+------------+------------------------+--------------+
+|conv1_input_V_data_0_V_TDATA   |  in |   16|    axis    | conv1_input_V_data_0_V |    pointer   |
+|conv1_input_V_data_0_V_TVALID  |  in |    1|    axis    | conv1_input_V_data_0_V |    pointer   |
+|conv1_input_V_data_0_V_TREADY  | out |    1|    axis    | conv1_input_V_data_0_V |    pointer   |
+|layer12_out_V_data_0_V_TDATA   | out |   16|    axis    | layer12_out_V_data_0_V |    pointer   |
+|layer12_out_V_data_0_V_TVALID  | out |    1|    axis    | layer12_out_V_data_0_V |    pointer   |
+|layer12_out_V_data_0_V_TREADY  |  in |    1|    axis    | layer12_out_V_data_0_V |    pointer   |
+|layer12_out_V_data_1_V_TDATA   | out |   16|    axis    | layer12_out_V_data_1_V |    pointer   |
+|layer12_out_V_data_1_V_TVALID  | out |    1|    axis    | layer12_out_V_data_1_V |    pointer   |
+|layer12_out_V_data_1_V_TREADY  |  in |    1|    axis    | layer12_out_V_data_1_V |    pointer   |
+|layer12_out_V_data_2_V_TDATA   | out |   16|    axis    | layer12_out_V_data_2_V |    pointer   |
+|layer12_out_V_data_2_V_TVALID  | out |    1|    axis    | layer12_out_V_data_2_V |    pointer   |
+|layer12_out_V_data_2_V_TREADY  |  in |    1|    axis    | layer12_out_V_data_2_V |    pointer   |
+|layer12_out_V_data_3_V_TDATA   | out |   16|    axis    | layer12_out_V_data_3_V |    pointer   |
+|layer12_out_V_data_3_V_TVALID  | out |    1|    axis    | layer12_out_V_data_3_V |    pointer   |
+|layer12_out_V_data_3_V_TREADY  |  in |    1|    axis    | layer12_out_V_data_3_V |    pointer   |
+|layer12_out_V_data_4_V_TDATA   | out |   16|    axis    | layer12_out_V_data_4_V |    pointer   |
+|layer12_out_V_data_4_V_TVALID  | out |    1|    axis    | layer12_out_V_data_4_V |    pointer   |
+|layer12_out_V_data_4_V_TREADY  |  in |    1|    axis    | layer12_out_V_data_4_V |    pointer   |
+|layer12_out_V_data_5_V_TDATA   | out |   16|    axis    | layer12_out_V_data_5_V |    pointer   |
+|layer12_out_V_data_5_V_TVALID  | out |    1|    axis    | layer12_out_V_data_5_V |    pointer   |
+|layer12_out_V_data_5_V_TREADY  |  in |    1|    axis    | layer12_out_V_data_5_V |    pointer   |
+|layer12_out_V_data_6_V_TDATA   | out |   16|    axis    | layer12_out_V_data_6_V |    pointer   |
+|layer12_out_V_data_6_V_TVALID  | out |    1|    axis    | layer12_out_V_data_6_V |    pointer   |
+|layer12_out_V_data_6_V_TREADY  |  in |    1|    axis    | layer12_out_V_data_6_V |    pointer   |
+|layer12_out_V_data_7_V_TDATA   | out |   16|    axis    | layer12_out_V_data_7_V |    pointer   |
+|layer12_out_V_data_7_V_TVALID  | out |    1|    axis    | layer12_out_V_data_7_V |    pointer   |
+|layer12_out_V_data_7_V_TREADY  |  in |    1|    axis    | layer12_out_V_data_7_V |    pointer   |
+|layer12_out_V_data_8_V_TDATA   | out |   16|    axis    | layer12_out_V_data_8_V |    pointer   |
+|layer12_out_V_data_8_V_TVALID  | out |    1|    axis    | layer12_out_V_data_8_V |    pointer   |
+|layer12_out_V_data_8_V_TREADY  |  in |    1|    axis    | layer12_out_V_data_8_V |    pointer   |
+|layer12_out_V_data_9_V_TDATA   | out |   16|    axis    | layer12_out_V_data_9_V |    pointer   |
+|layer12_out_V_data_9_V_TVALID  | out |    1|    axis    | layer12_out_V_data_9_V |    pointer   |
+|layer12_out_V_data_9_V_TREADY  |  in |    1|    axis    | layer12_out_V_data_9_V |    pointer   |
+|ap_clk                         |  in |    1| ap_ctrl_hs |        myproject       | return value |
+|ap_rst_n                       |  in |    1| ap_ctrl_hs |        myproject       | return value |
+|ap_start                       |  in |    1| ap_ctrl_hs |        myproject       | return value |
+|ap_done                        | out |    1| ap_ctrl_hs |        myproject       | return value |
+|ap_ready                       | out |    1| ap_ctrl_hs |        myproject       | return value |
+|ap_idle                        | out |    1| ap_ctrl_hs |        myproject       | return value |
++-------------------------------+-----+-----+------------+------------------------+--------------+
+
