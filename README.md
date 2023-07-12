@@ -22,4 +22,4 @@
 ">6) Malaria Recognition CNN  </a>
 
 <a href="https://github.com/minecraftdixit/HLS4ML_codes_on_ZCU104/tree/main/vww
-">6) Visual wake word recognition   </a>
+">7) Visual wake word recognition   </a>
