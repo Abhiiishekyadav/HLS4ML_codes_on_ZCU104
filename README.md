@@ -3,9 +3,7 @@
 
 |  Model name | normal synthesis | qkeras synthesis |
 |----------|----------|----------|
-|  
-<a href="https://github.com/minecraftdixit/HLS4ML_codes_on_ZCU104/tree/main/code1
-">1)Gesture recognition</a>   | ✅       | Row 1    |
+|  <a href="https://github.com/minecraftdixit/HLS4ML_codes_on_ZCU104/tree/main/code1">1)Gesture recognition</a>   | ✅       | Row 1    |
 | Row 2    | ✅       | Row 2    |
 | Row 3    | ✅       | Row 3    |
 | Row 4    | ✅       | Row 4    |
