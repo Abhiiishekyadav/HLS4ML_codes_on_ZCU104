@@ -1,7 +1,32 @@
 # HLS4ML_codes_on_ZCU104
- 
+
+
+|  Model name | normal synthesis | qkeras synthesis |
+|----------|----------|----------|
+|  
 <a href="https://github.com/minecraftdixit/HLS4ML_codes_on_ZCU104/tree/main/code1
-">1)Gesture recognition</a>
+">1)Gesture recognition</a>   | ✅       | Row 1    |
+| Row 2    | ✅       | Row 2    |
+| Row 3    | ✅       | Row 3    |
+| Row 4    | ✅       | Row 4    |
+| Row 5    | ✅       | Row 5    |
+| Row 6    | ✅       | Row 6    |
+| Row 7    | ✅       | Row 7    |
+| Row 8    | ✅       | Row 8    |
+| Row 9    | ✅       | Row 9    |
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 <a href="https://github.com/minecraftdixit/HLS4ML_codes_on_ZCU104/tree/main/code3
 ">2)Face mask detection</a>
