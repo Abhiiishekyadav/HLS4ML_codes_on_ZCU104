@@ -11,7 +11,7 @@
 | <a href="https://github.com/minecraftdixit/HLS4ML_codes_on_ZCU104/tree/main/malaria_tf">6) Malaria Recognition CNN  </a>  |  ✔️          | ✔️    |
 |<a href="https://github.com/minecraftdixit/HLS4ML_codes_on_ZCU104/tree/main/vww">7) Visual wake word recognition   </a> |  ✔️          |  ✔️  |
 |<a href="https://github.com/minecraftdixit/HLS4ML_codes_on_ZCU104/tree/main/asl">8) American sign language detection  </a> | ✔️| ✔️| |
-|<a href="https://github.com/minecraftdixit/HLS4ML_codes_on_ZCU104/tree/main/asl">9)pneumonia </a> | ⌛| ⌛|
+|<a href="https://github.com/minecraftdixit/HLS4ML_codes_on_ZCU104/tree/main/pneumonia">9)pneumonia </a> | ✔️| ⌛|
 
 
 
